@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.abook">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme.NoActionBar">
+        <activity
+            android:name=".LoginActivity"
+            android:theme="@style/AppTheme.activity_login">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".AnimalActivity"
+            android:label="AnimalActivity 액티비티" />
+        <activity
+            android:name=".AnimalDetailActivity"
+            android:label="AnimalDetailActivity 액티비티" />
+        <activity
+            android:name=".AnimalAddActivity"
+            android:label="AnimalAddActivity 액티비티"
+            android:theme="@style/AppTheme.activity_animaladd" />
+        <activity
+            android:name=".UserActivity"
+            android:windowSoftInputMode="stateAlwaysHidden"
+            android:label="UserActivity 액티비티"
+            android:theme="@style/AppTheme" />
+        <activity
+            android:name=".AnimalDetailProfileEditActivity"
+            android:label="AnimalDetailProfileEdit 액티비티"
+            android:theme="@style/AppTheme.activity_animaladd" />
+        <activity
+            android:name=".MainActivity"
+            android:label="MainActivity 액티비티" />
+        <activity
+            android:name=".MembershipActivity"
+            android:label="MembershipActivity 액티비티" />
+        <activity
+            android:name=".DrugstoreActivity"
+            android:windowSoftInputMode="stateAlwaysHidden"
+            android:label="DrugstoreActivity 액티비티" />
+        <activity
+            android:name=".DrugstoreInformationActivity"
+            android:label="DrugstoreInformationActivity 액티비티" />
+        <activity
+            android:name=".QnAActivity"
+            android:windowSoftInputMode="stateAlwaysHidden"
+            android:label="QnAActivity 액티비티" />
+        <activity
+            android:name=".QnAAddActivity"
+            android:windowSoftInputMode="stateAlwaysHidden"
+            android:label="QnAAddActivity 액티비티" />
+        <activity
+            android:name=".QnAContentActivity"
+            android:label="QnAContentActivity 액티비티" />
+        <activity
+            android:name=".SampleActivity"
+            android:label="SampleActivity 액티비티" />
+    </application>
+
+</manifest>

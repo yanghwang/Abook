@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:background="#C7E8F7"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:gravity="center_horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/imageView1"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="80dp"
+            android:src="@drawable/dog" />
+
+        <ImageView
+            android:id="@+id/imageView2"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_centerHorizontal="true"
+            android:layout_alignRight="@+id/imageView1"
+            android:layout_marginTop="80dp"
+            android:src="@drawable/abook" />
+
+        <ImageView
+            android:id="@+id/imageView3"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="80dp"
+            android:src="@drawable/dog" />
+
+    </LinearLayout>
+
+    <EditText
+        android:id="@+id/tvID"
+        android:singleLine="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/linearLayout"
+        android:layout_marginTop="40dp"
+        android:minEms="12"
+        android:maxLength="15"
+        android:hint="아이디"/>
+
+    <EditText
+        android:id="@+id/tvPWD"
+        android:singleLine="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/tvID"
+        android:layout_marginTop="20dp"
+        android:minEms="12"
+        android:hint="비밀번호"
+        android:password="true"/>
+
+    <TextView
+        android:id="@+id/btnNewMember"
+        android:text="  회원가입"
+        android:textStyle="bold"
+        android:layout_below="@+id/tvPWD"
+        android:layout_marginTop="40dp"
+        android:layout_alignLeft="@+id/tvPWD"
+        android:drawableStart="@drawable/membership"
+        android:drawableLeft="@drawable/membership"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <TextView
+        android:id="@+id/btnLogin"
+        android:text="  로그인"
+        android:textStyle="bold"
+        android:layout_below="@+id/tvPWD"
+        android:layout_marginTop="40dp"
+        android:layout_alignRight="@+id/tvPWD"
+        android:drawableStart="@drawable/footprint"
+        android:drawableLeft="@drawable/footprint"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+</RelativeLayout>
